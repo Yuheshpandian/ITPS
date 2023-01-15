@@ -14,16 +14,16 @@ def convert_to_pecilsketch(img):
 
 
 print('ITPS ')
-
+# gets input of the path
 img_loc = input('ENTER THE LOCATION OF THE IMG IN YOUR SYSTEM THAT YOU WANT TO CONVERT TO PENCIL SKETCH ART ')
 
 
 img = cv2.imread(img_loc)
-
-file_name = str(random.randint(1,1000))+str(random.randint(1,1000))+'ITPS.png'
+# generates file name to write
+file_name = str(random.randint(1,10000))+str(random.randint(1,10000))+'ITPS.png'
 
 sketch = convert_to_pecilsketch(img)
-#"C:\Users\User\Downloads\clipart1007838.png"
+#
 cv2.imwrite(file_name, sketch)
 cv2.imshow(file_name, sketch)
 cv2.waitKey(0)
