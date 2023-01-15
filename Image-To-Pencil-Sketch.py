@@ -1,6 +1,8 @@
+# importing required libraries
 import cv2
 import random
 
+# func converts image to pencil sketch
 def convert_to_pecilsketch(img):
     grey_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     invert_img = cv2.bitwise_not(grey_img)
