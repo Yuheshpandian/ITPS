@@ -23,8 +23,10 @@ img = cv2.imread(img_loc)
 file_name = str(random.randint(1,10000))+str(random.randint(1,10000))+'ITPS.png'
 
 sketch = convert_to_pecilsketch(img)
-#
+# writes the img
 cv2.imwrite(file_name, sketch)
+# shows the img
 cv2.imshow(file_name, sketch)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+# code ends
